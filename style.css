@@ -1,0 +1,612 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: #FFFFFF;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(image/background/jcr_content\ 1.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+.logo{
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+
+}
+
+.logo_title{
+    position: fixed;
+    float: left;
+    margin: 25px 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #000;
+    z-index: 100000;
+
+}
+
+
+nav ul{
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+    float: right;
+}
+
+nav.black ul{
+    background: #000;
+}
+
+.active {
+    height: auto;
+    width: auto;
+    margin: 5px;
+    background-color: white;
+    color: #000;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    height: auto;
+    width: auto;
+    margin: 5px;
+    background-color: white;
+    color: #000;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+
+
+nav ul li input{
+    height: 30px;
+    width: auto;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+.content {
+    height: auto;
+    margin: 40px auto;
+    padding: 50px auto;
+    width: 80%;
+    min-width: 50%;
+
+    background: rgba(45, 43, 43, 0.5);
+    border-radius: 42px;
+}
+
+.content h1{
+    font-size: 2em;
+    text-align: center; padding: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.content p{
+    text-align: justify;
+    margin: 20px auto;
+    padding: 30px;
+    font-size: 16px;
+
+}
+
+
+
+.content button {
+    font-size: 1em;
+    text-align: center;
+    width: auto;
+    min-width: 200px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.content button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: 0.3s;
+}
+
+.slideshow-container {  
+   margin: 50px ;
+   padding: 40px ;
+
+    
+}
+
+.slideshow-container img {
+    scale: 150%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+.breakline {
+    height: 2px;
+    background-color: #FFFFFF;
+    width: 90%;
+    margin: 40px auto;
+    border-radius: 40px;
+}
+
+.breakline1 {
+    height: 2px;
+    background-color: #FFFFFF;
+    width: 60%;
+    margin: 40px auto;
+    border-radius: 40px;
+}
+
+
+
+
+
+.destination {
+    text-align: center;
+}
+
+.accomodation {
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(45, 43, 43, 0.5); 
+
+}
+
+
+
+.accomodation h1{
+    font-size: 2rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 20px auto;
+    padding: 20px auto;
+    text-transform: uppercase;
+}
+
+.facility h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 20px auto;
+    padding: 20px auto;
+    text-transform: uppercase;
+}
+
+.facility img {
+    border-radius: 30px ; 
+    align-items: center;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+}
+
+.facility p {
+    margin: 20px auto;
+    padding: 20px auto;
+    text-align: center;
+}
+
+.facility .facilityImage:hover{
+    background-image: url(image/facility/Tirta-Empul-Bali-Hello-Travel-5\ 1.png) ;
+}
+
+
+
+/* akomodasi */
+.cardAccomodation{
+    margin: auto;
+    display: flex;
+}
+
+.accomodationTitle{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#container{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 350px;
+	width: 700px;
+  
+	
+}
+
+
+
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+
+}
+
+#container .product-details h1{
+	font-family: Arial, Helvetica, sans-serif;
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	color: #344055;
+	margin: 0;
+	
+}
+
+#container .product-details h1:before{
+	position: absolute;
+	content: '';
+	right: 0%; 
+	top: 0%;
+	transform: translate(25px, -15px);
+	font-family: 'Bree Serif', serif;
+	display: inline-block;
+	background: #ffe6e6;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px;
+	color: white;
+	margin: 0;
+	animation: chan-sh 6s ease infinite;
+
+}
+
+
+
+	
+
+
+.hint-star {
+	display: inline-block;
+	margin-left: 0.5em;
+	color: gold;
+	width: 50%;
+}
+
+
+#container .product-details > p {
+font-family: 'EB Garamond', serif;
+	text-align: center;
+	font-size: 18px;
+	color: #7d7d7d;
+	
+}
+.control{
+	position: absolute;
+	bottom: 20%;
+	left: 22.8%;
+	
+}
+.btn {
+
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background:  #809fff;
+	border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: #eee;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.btn:hover{transform: translateY(-6px);
+	background: #1a66ff;}
+
+.btn span {
+	font-family: Arial, Helvetica, sans-serif;
+	transition: transform 0.3s;
+	display: inline-block;
+    padding: 10px 20px;
+	font-size: 1.2em;
+	margin:0;
+	
+}
+.btn .price, .shopping-cart{
+	background: #333;
+	border: 0;
+	margin: 0;
+}
+
+.btn .price {
+	transform: translateX(-10%); padding-right: 15px;
+}
+
+.btn .shopping-cart {
+	transform: translateX(-100%);
+    position: absolute;
+	background: #333;
+	z-index: 1;
+    left: 0;
+    top: 0;
+}
+
+
+
+.btn .buy {
+    z-index: 3; font-weight: bolder;
+}
+
+.btn:hover .price {
+    transform: translateX(-110%);
+}
+
+.btn:hover .shopping-cart {
+    transform: translateX(0%);
+}
+
+
+
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 45%;
+	display: inline-block;
+}
+
+#container img {width: 100%;height: 100%;}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 105%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {
+    text-align: center
+}
+.product-image:hover .info{
+    transform: translateX(0);
+}
+
+.info ul li{
+    transition: 0.3s ease;
+}
+.info ul li:hover{
+    transform: translateX(50px) scale(1.3);
+}
+
+.product-image:hover img {
+    transition: all 0.3s ease-out;
+}
+.product-image:hover img {
+    transform: scale(1.2, 1.2);
+}
+
+.accomodation .button {
+    font-size: 1em;
+    text-align: center;
+    width: auto;
+    min-width: 200px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.accomodation .button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transition: 0.3s;
+}
+
+/* Map dan Form*/
+
+.thirdSection{
+    width: 95%;
+    height: auto;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: rgba(45, 43, 43, 0.5);
+}
+.thirdSection h1{
+    font-size: 2rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 20px auto;
+    padding: 20px auto;
+    text-transform: uppercase;
+}
+
+.mapAndForm{
+    display: flex;
+    padding-left: 40px;
+}
+
+.thirdSection .map iframe {
+    display: flex;
+    padding: 34x;
+}
+.thirdSection .form{
+    margin: 40px auto;
+    width: 40%;
+    height: auto;
+    padding: 20px;
+    float: right;
+    background-color: white;
+    float: right;
+    border-radius: 20px;
+
+}
+
+.form h3 {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin: 20px auto;
+    padding: 20px auto;
+    text-transform: uppercase;
+}
+
+.form ul li {
+    margin: 10px auto;
+    padding: 20px;
+    text-decoration: none;
+
+}
+
+.form ul li input {
+        text-decoration: none;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 17px;
+        color: #ffffff;
+        width: 80%;
+        height: 40px;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #000;
+}
+.form {
+    font-size: 1em;
+    text-align: center;
+    width: auto;
+    min-width: 200px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    margin: auto;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+}
+
+.form .button{
+    width: 30%;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+    align-items: center;
+    margin: auto;
+    font-size: 20px;
+}
+
+.form .button:hover{
+    background-color: #000;
+    color: #FFF;
+    transition: 0.3s;
+}
+/* footer */
+footer {
+    width: auto;
+    height: 120px;
+    min-height: 100px;
+    background-color: rgba(45, 43, 43, 0.5); 
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+}
+
